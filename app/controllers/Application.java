@@ -7,11 +7,11 @@ import views.html.*;
 
 public class Application extends Controller {
   
-    public static Result index() {
+    public Result index() {
         return ok("Hello world");
     }
 
-    public static Result hello(String name) {
+    public Result hello(String name) {
     	return ok("Hello " + name);
     }
   

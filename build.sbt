@@ -1,11 +1,10 @@
 name := "HelloWorld"
-
+organization := "PlayForJava"
 version := "1.0-SNAPSHOT"
 
-libraryDependencies ++= Seq(
-  javaJdbc,
-  javaEbean,
-  cache
-)     
+lazy val root = (project in file(".")).enablePlugins(PlayJava)
 
-play.Project.playJavaSettings
+scalaVersion := "2.12.8"
+
+libraryDependencies += guice
+
